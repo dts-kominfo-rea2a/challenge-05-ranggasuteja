@@ -10,8 +10,8 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 const sorter = (listNama, callbackSortNama) => {
   callbackSortNama(listNama);
   newListNama = [];
-  for (let i = 1; i < listNama.length; i++) {
-    newListNama.push(i + ". " + listNama[i]);
+  for (let i = 0; i < listNama.length; i++) {
+    newListNama.push(i + 1 + ". " + listNama[i]);
   }
   return newListNama;
 };
